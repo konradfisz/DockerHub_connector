@@ -1,5 +1,5 @@
 FROM java:8
 RUN javac main.java
 MAINTAINER kfisz
-COPY testprj-1.0-SNAPSHOT.jar /home/testprj-1.0-SNAPSHOT.jar
-CMD ["java", "main"]
+COPY mysql-connector-java-5.1.6-bin.jar /home/mysql-connector-java-5.1.6-bin.jar
+CMD ["java","-jar","/home/mysql-connector-java-5.1.6-bin.jar","main"]
