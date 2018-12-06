@@ -7,7 +7,7 @@ public class Sample {
       	String url = "jdbc:msql://10.0.10.3:3306/pwcho";
 	String username = "kfisz";
 	String password = "password";
-		
+		dsadas
 	System.out.println("Connecting to the database");
     
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
