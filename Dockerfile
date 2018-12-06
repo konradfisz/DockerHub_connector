@@ -1,6 +1,6 @@
 FROM java:7
 MAINTAINER kfisz
-COPY Sample.java /home/Sample.java
-COPY mysql-connector-java-5.1.6-bin.jar /home/mysql-connector-java-5.1.6-bin.jar
-RUN javac /home/Sample.java
-CMD ["java","-jar","/home/mysql-connector-java-5.1.6-bin.jar","/home/Sample"]
+COPY . /var/www/java
+WORKDIR /var/www/java
+RUN javac Sample.java
+CMD ["java","-classpath","mysql-connector-java-5.1.6-bin.jar:.","Sample"]
