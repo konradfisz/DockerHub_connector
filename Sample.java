@@ -4,7 +4,7 @@ public class Sample {
 
 	public static void main (String[] args) {
         
-      	String url = "jdbc:mysql://10.0.10.3:3306/pwcho";
+      	String url = "jdbc:mysql://bridge-zadanie-1:3306/pwcho";
 	String username = "kfisz";
 	String password = "password";
 	
