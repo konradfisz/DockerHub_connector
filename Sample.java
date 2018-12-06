@@ -7,7 +7,16 @@ public class Sample {
       	String url = "jdbc:msql://10.0.10.3:3306/pwcho";
 	String username = "kfisz";
 	String password = "password";
-		dsadas
+	
+	System.out.println("Loading driver...");
+
+	try {
+	    Class.forName("com.mysql.jdbc.Driver");
+	    System.out.println("Driver loaded!");
+	} catch (ClassNotFoundException e) {
+	    throw new IllegalStateException("Cannot find the driver in the classpath!", e);
+	}
+		
 	System.out.println("Connecting to the database");
     
         try (Connection conn = DriverManager.getConnection(url, username, password)) {
