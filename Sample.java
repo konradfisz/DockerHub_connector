@@ -4,7 +4,7 @@ public class Sample {
 
 	public static void main (String[] args) {
         
-      	String url = "jdbc:mysql://10.0.10.3:3306/pwcho";
+      	String url = "jdbc:mysql://10.0.10.3:3306/pwcho?useUnicode=true&character_set_server=utf8mb4";
 	String username = "kfisz";
 	String password = "password";
 	
