@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:7
 MAINTAINER kfisz
 COPY . /var/www/java
 WORKDIR /var/www/java
