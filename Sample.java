@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class main {
+public class Sample {
 
 	public static void main (String[] args) {
         
